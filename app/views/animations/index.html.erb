@@ -1,0 +1,19 @@
+<% if @current_user.present? %>
+
+  <h2>All Manga:</h2>
+  <div>
+    <% @animations.each do |animation| %>
+    <%= image_tag(animation.image) %>
+      <%= link_to (animation.name), animation_path(animation)%>
+        <%= button_to "Add to My Manga", add_animation_path(animation.id), :method => 'get' %>
+      <br />
+    <% end %>
+  </div>
+  <%= button_to "Back", root_path, :method => :get %>
+
+<% else %>
+  <div>
+    <h1>Welcome to MangaStore</h1>
+    <p>© 2019</p >
+  </div>
+<% end %>

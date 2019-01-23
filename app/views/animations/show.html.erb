@@ -1,0 +1,17 @@
+<% if @current_user.present? %>
+
+  <h2><%= @animation.name %> </h2>
+  <p><%= @animation.description %> </p>
+  <%= image_tag(@animation.image) %>
+  <div>Artist: <%= @artist.name %> </div>
+  <div>
+
+  </div>
+  <%= button_to "Back", root_path, :method => :get %>
+
+<% else %>
+  <div>
+    <h1>Welcome to MangaStore</h1>
+    <p>© 2019</p >
+  </div>
+<% end %>

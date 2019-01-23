@@ -1,0 +1,20 @@
+<% if @current_user.present? %>
+
+  <h2>My Manga:</h2>
+  <div>
+    <% @current_user.animations.each do |animation| %>
+      <%= image_tag(animation.image) %>
+      <%= link_to (animation.name), animation_path(animation)%>
+      <%= button_to "Unlike", unlike_animation_path(animation.id), :method => :get %>
+      <br />
+    <% end %>
+  </div>
+  <%= button_to "Browse Manga", { :action => "index", :controller => 'animations' }, :method => :get %>
+
+
+<% else %>
+  <div>
+    <h1>Welcome to MangaStore</h1>
+    <p>© 2019</p >
+  </div>
+<% end %>
