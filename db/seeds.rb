@@ -26,7 +26,7 @@ Muromachi period (approximately 1336 to 1573) of Japan with fantasy elements. Th
 young Emishi prince Ashitaka's involvement in a struggle between the gods of a forest and the humans
 who consume its resources.",:image =>'https://image.gcores.com/065cc53f-9317-4df1-bf4d-6a4deda22bf2.jpeg'
 
-a4 = Animation.create :name => 'Neon Genesis Evangelion', :description => "vangelion is set fifteen years
+a4 = Animation.create :name => 'Neon Genesis Evangelion', :description => "Evangelion is set fifteen years
 after a worldwide cataclysm, particularly in the futuristic fortified city of Tokyo-3. The protagonist is
 Shinji, a teenage boy who was recruited by his father to the shadowy organization Nerv to pilot a giant
 bio-machine mecha called an Evangelion into combat with alien beings called Angels.",:image =>'https://cdn-images-1.medium.com/max/1600/0*04aPaW9wxoW03x0f.jpg'

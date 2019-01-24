@@ -1,10 +1,11 @@
+<div class="<%= controller_name %>">
 <% if @current_user.present? %>
   <div >
   <h2><%= @animation.name %> </h2>
   <p><%= @animation.description %> </p>
   <%= image_tag(@animation.image,:class =>'animation_thumbnail') %>
   </div>
-  <div>Artist: <%= @artist.name %> </div>
+  <div class="artist">Artist: <%= @artist.name %> </div>
   <div>
 
   </div>
@@ -16,3 +17,4 @@
     <!-- <p>© 2019</p > -->
   </div>
 <% end %>
+</div>
