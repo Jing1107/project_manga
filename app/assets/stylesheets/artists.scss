@@ -1,3 +1,20 @@
 // Place all the styles related to the artists controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.artist_thumbnail {
+  margin-top: 2em;
+  margin-bottom: 1em;
+  margin-right: 2em;
+  max-width: 30vw;
+  max-height: 30vh;
+}
+
+.artists {
+  background-color: rgba(#c2d8e3, 0.43);
+}
+
+.description {
+  margin-top: 1em;
+  margin-bottom: 3em;
+  font-size: 20px;
+}

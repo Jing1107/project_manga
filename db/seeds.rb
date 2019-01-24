@@ -63,11 +63,38 @@ to fighting for the king.",:image => 'http://images.china.cn/attachement/jpg/sit
 a10 = Animation.create :name => '', :description => '', :image => ''
 
 Artist.destroy_all
-r1 = Artist.create :name => 'Naoko Takeuchi', :description => 'im aa'
-r2 = Artist.create :name => 'Naoko Takeuchi', :description => 'im bb'
-r3 = Artist.create :name => 'Hideaki Anno', :description => 'im cc'
-r4 = Artist.create :name => 'Fuyumi Ono', :description => 'im dd'
-r5 = Artist.create :name => 'Miyazaki Hayao', :description => 'im ee'
+r1 = Artist.create :name => 'Naoko Takeuchi', :description => "Naoko Takeuchi
+(武内 直子 Takeuchi Naoko, born March 15, 1967) is a Japanese manga artist. She is
+best known as the author of Sailor Moon, one of the most-popular manga series
+of all time.", :image => 'https://pbs.twimg.com/profile_images/762110987797266433/_MjCoeqv.jpg'
+
+r2 = Artist.create :name => 'Rumiko Takahashi', :description => "Rumiko Takahashi
+(高橋 留美子 Takahashi Rumiko, born October 10, 1957) is a Japanese manga artist.
+With a career of several commercially successful works, beginning with Urusei
+Yatsura in 1978, Takahashi is one of Japan's most affluent manga artists. Her works
+are popular worldwide, where they have been translated into a variety of languages,
+with over 200 million copies in circulation.[3] She has twice won the Shogakukan
+Manga Award: once in 1980 for Urusei Yatsura, and again in 2001 for
+Inuyasha.", :image => 'https://vignette.wikia.nocookie.net/ranma/images/f/f9/Rumiko_Takahashi_in_2010.jpg/revision/latest?cb=20120116214507'
+
+r3 = Artist.create :name => 'Hideaki Anno', :description => "Hideaki Anno
+(庵野 秀明 Anno Hideaki, born May 22, 1960) is a Japanese animator, film director, and actor.
+He is best known for creating the popular anime series Neon Genesis Evangelion.
+His style has become defined by his incorporation of postmodernism and the extensive
+portrayal of characters' thoughts and emotions, often through unconventional scenes
+presenting the mental deconstruction of those characters.", :image => 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Godzilla_Resurgence_World_Premiere_Red_Carpet-_Anno_Hideaki_%2828526527191%29.jpg/220px-Godzilla_Resurgence_World_Premiere_Red_Carpet-_Anno_Hideaki_%2828526527191%29.jpg'
+
+r4 = Artist.create :name => 'Fuyumi Ono', :description => "Fuyumi Ono
+(小野 不由美 Ono Fuyumi, born December 24, 1960) is a Japanese novelist best known for writing
+The Twelve Kingdoms (十二国記 Jūni Kokuki), which was adapted into a popular anime series.
+She is married to Yukito Ayatsuji, the author of the horror novel Another.", :image => 'https://vignette.wikia.nocookie.net/ghost-hunt/images/8/80/Fuyumi_ono_01.jpg/revision/latest?cb=20140521110635'
+
+r5 = Artist.create :name => 'Miyazaki Hayao', :description => "Hayao Miyazaki
+(宮崎 駿 Miyazaki Hayao, born January 5, 1941) is a Japanese animator, filmmaker,
+screenwriter, cartoonist, author, and manga artist. A co-founder of Studio Ghibli,
+a film and animation studio, he has attained international acclaim as a masterful
+storyteller and as a maker of anime feature films, and is widely regarded as one of
+the greatest animation filmmakers.", :image => 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Hayao_Miyazaki.jpg/220px-Hayao_Miyazaki.jpg'
 
 Genre.destroy_all
 g1 = Genre.create :name => 'adventure'

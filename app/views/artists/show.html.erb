@@ -1,0 +1,12 @@
+<div class="<%= controller_name %>">
+<h2><%= @artist.name %></h2>
+
+<div>
+  <%= image_tag(@artist.image, :class =>'artist_thumbnail') %>
+
+  <p class="description">Description: <%= @artist.description %></p>
+
+</div>
+
+<%= button_to "Back", root_path, :method => :get %>
+</div>

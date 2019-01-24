@@ -1,20 +1,20 @@
 <div class="<%= controller_name %>">
-<% if @current_user.present? %>
+  <% if @current_user.present? %>
   <div >
   <h2><%= @animation.name %> </h2>
   <p id="description"><%= @animation.description %> </p>
-  <%= image_tag(@animation.image,:class =>'animation_thumbnail') %>
+    <%= image_tag(@animation.image,:class =>'animation_thumbnail') %>
   </div>
-  <div class="artist">Artist: <%= @artist.name %> </div>
-  <div>
 
-  </div>
+  <div class="artist">Artist: <%= link_to @animation.artist.name, artist_path(@animation.artist) %></div>
+
+
   <%= button_to "Back", root_path, :method => :get %>
 
-<% else %>
+  <% else %>
   <div>
     <h1>Welcome to MangaStore</h1>
-    <!-- <p>© 2019</p > -->
+
   </div>
-<% end %>
+  <% end %>
 </div>
