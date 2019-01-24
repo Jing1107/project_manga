@@ -1,7 +1,8 @@
 // Place all the styles related to the session controller here.
 // They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+
 .loginWrapper {
+  margin-top: 3rem;
   margin-bottom: 3rem;
 }
 
@@ -20,3 +21,24 @@
 .session {
   background-color: rgba(#d6f4ee, 0.43);
 }
+
+h1 {
+  font-size: 4.5rem;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+   /* Chrome, Safari, Opera */
+  -webkit-animation: rainbow 4s infinite;
+  }
+
+  @-webkit-keyframes rainbow {
+  0%{color: pink;}
+  10%{color: pink;}
+  20%{color: orange;}
+  30%{color: CadetBlue;}
+  40%{color: yellow;}
+  50%{color: coral;}
+  60%{color: coral;}
+  70%{color: cyan;}
+  80%{color: DeepPink;}
+  90%{color: DodgerBlue;}
+  100%{color: orange;}
+  }

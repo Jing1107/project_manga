@@ -1,3 +1,4 @@
+<div class="<%= controller_name %>">
 <%= form_for @user do |f| %>
   <h1>Sign Up </h1>
   <% if flash[:error] %>
@@ -5,22 +6,22 @@
       <%= flash[:error]%>
     </div>
   <% end %>
-  <div id="inner-signup">
-    <%= f.label :email %>
-    <%= f.email_field :email%>
-  <br />
-
-
-    <%= f.label :password %>
-    <%= f.password_field :password %>
-  <br />
-
-
-    <%= f.label :password_confirmation %>
-    <%= f.password_field :password_confirmation  %>
-  <br />
-
-
-  <%= f.submit "Sign up!", :class => "submit-btn" %>
+  <div class="loginWrapper">
+    <%= f.label :email%>
+    <%= f.email_field :email,:class =>'email'%>
   </div>
+
+  <div class="lohinWrapper">
+    <%= f.label :password %>
+    <%= f.password_field :password, :class =>'password' %>
+  </div>
+
+  <div class="loginWrapper">
+    <%= f.label :password_confirmation %>
+    <%= f.password_field :password_confirmation, :class =>'password_confirmation' %>
+  </div>
+
+
+  <%= f.submit "Sign Up Now", :class =>' signbtn btn btn-lg btn-primary btn-block' %>
 <% end %>
+</div>

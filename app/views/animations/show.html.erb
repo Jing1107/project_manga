@@ -2,7 +2,7 @@
 <% if @current_user.present? %>
   <div >
   <h2><%= @animation.name %> </h2>
-  <p><%= @animation.description %> </p>
+  <p id="description"><%= @animation.description %> </p>
   <%= image_tag(@animation.image,:class =>'animation_thumbnail') %>
   </div>
   <div class="artist">Artist: <%= @artist.name %> </div>

@@ -60,6 +60,8 @@ with another kingdom. The film tells the story of a young hatter named Sophie af
 an old woman by a witch's curse. She encounters a wizard named Howl, and gets caught up in his resistance
 to fighting for the king.",:image => 'http://images.china.cn/attachement/jpg/site1000/20130902/d43d7e14ddbc138e76fc5e.jpg'
 
+a10 = Animation.create :name => '', :description => '', :image => ''
+
 Artist.destroy_all
 r1 = Artist.create :name => 'Naoko Takeuchi', :description => 'im aa'
 r2 = Artist.create :name => 'Naoko Takeuchi', :description => 'im bb'
