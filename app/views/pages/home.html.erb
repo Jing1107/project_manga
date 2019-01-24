@@ -1,21 +1,21 @@
 <div class="<%= controller_name %>">
 <% if @current_user.present? %>
 
-  <h2>My Manga:</h2>
+  <h2>My Animation:</h2>
   <div class="mymanga">
     <% @current_user.animations.each do |animation| %>
       <%= image_tag(animation.image, :class =>'animation_thumbnail') %>
-      <%= link_to (animation.name), animation_path(animation)%>
+      <%= link_to (animation.name), animation_path(animation), :class => 'animation_name'%>
       <%= button_to "Unlike", unlike_animation_path(animation.id), :method => :get %>
       <br/>
     <% end %>
   </div>
-  <%= button_to "Browse Manga", { :action => "index", :controller => 'animations' }, :method => :get %>
+  <%= button_to "Browse Animation", { :action => "index", :controller => 'animations' }, :method => :get %>
 
 
 <% else %>
   <div >
-    <h1 class="rainbow">Welcome to MangaStore</h1>
+    <h1 class="rainbow">Welcome to Animation World</h1>
   </div>
   <footer>
     <p>Jing © 2019</p>

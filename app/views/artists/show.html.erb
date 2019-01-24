@@ -3,10 +3,11 @@
 
 <div>
   <%= image_tag(@artist.image, :class =>'artist_thumbnail') %>
-
-  <p class="description">Description: <%= @artist.description %></p>
-
 </div>
+
+<p class="description">Description: <%= @artist.description %></p>
+
+
 
 <%= button_to "Back", root_path, :method => :get %>
 </div>

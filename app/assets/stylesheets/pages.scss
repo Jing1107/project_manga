@@ -3,6 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 @import url('https://fonts.googleapis.com/css?family=Monoton');
 @import url('https://fonts.googleapis.com/css?family=Fjalla+One');
+@import url('https://fonts.googleapis.com/css?family=Bad+Script|Fredericka+the+Great');
 
 $highfont: #6BB298;
 $mainFont: 'Fjalla One', sans-serif;
@@ -12,6 +13,9 @@ $mainFont: 'Fjalla One', sans-serif;
   margin: 0;
 }
 
+.pages {
+  background-color: rgba(#dbedf6, 0.43);
+}
 
 body {
   background-color: lightpink;
