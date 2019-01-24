@@ -1,24 +1,26 @@
 <%= form_for @user do |f| %>
-  <h1>Sign Up</h1>
+  <h1>Sign Up </h1>
   <% if flash[:error] %>
     <div>
       <%= flash[:error]%>
     </div>
   <% end %>
-  <div >
+  <div id="inner-signup">
     <%= f.label :email %>
     <%= f.email_field :email%>
-  </div>
+  <br />
 
-  <div >
+
     <%= f.label :password %>
     <%= f.password_field :password %>
-  </div>
+  <br />
 
-  <div >
+
     <%= f.label :password_confirmation %>
     <%= f.password_field :password_confirmation  %>
-  </div>
+  <br />
 
-  <%= f.submit "Sign up!" %>
+
+  <%= f.submit "Sign up!", :class => "submit-btn" %>
+  </div>
 <% end %>

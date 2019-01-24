@@ -1,8 +1,9 @@
 <% if @current_user.present? %>
-
+  <div >
   <h2><%= @animation.name %> </h2>
   <p><%= @animation.description %> </p>
-  <%= image_tag(@animation.image) %>
+  <%= image_tag(@animation.image,:class =>'animation_thumbnail') %>
+  </div>
   <div>Artist: <%= @artist.name %> </div>
   <div>
 
@@ -12,6 +13,6 @@
 <% else %>
   <div>
     <h1>Welcome to MangaStore</h1>
-    <p>© 2019</p >
+    <!-- <p>© 2019</p > -->
   </div>
 <% end %>

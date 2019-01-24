@@ -3,7 +3,7 @@
   <h2>My Manga:</h2>
   <div>
     <% @current_user.animations.each do |animation| %>
-      <%= image_tag(animation.image) %>
+      <%= image_tag(animation.image, :class =>'animation_thumbnail') %>
       <%= link_to (animation.name), animation_path(animation)%>
       <%= button_to "Unlike", unlike_animation_path(animation.id), :method => :get %>
       <br />
@@ -13,8 +13,17 @@
 
 
 <% else %>
-  <div>
-    <h1>Welcome to MangaStore</h1>
-    <p>© 2019</p >
+  <div >
+    <h1 class="rainbow">Welcome to MangaStore</h1>
   </div>
+  <footer>
+    <p>Jing © 2019</p >
+    <div class="whitesocials">
+      <a href="https://github.com/Jing1107"><%= image_tag '/assets/githubwhitegood.png', :class => "whiteicon"%></a>
+      <a href="https://www.linkedin.com/in/jing-sissi-dong-960b94122/"><%= image_tag '/assets/linkediniconwhite.png', :class => "whiteicon linkedinicon"%></a>
+      <a href="https://twitter.com/Jing11072"> <%= image_tag '/assets/twittericonwhite.png', :class => "whiteicon twittericon" %></a>
+    </div>
+  </footer>
+
+
 <% end %>

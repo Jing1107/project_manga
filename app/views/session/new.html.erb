@@ -1,16 +1,16 @@
 <%= form_tag login_path do %>
-  <h1>Please sign in</h1>
+  <h1 class="loginText">Please sign in</h1>
 
   <% if flash[:error] %>
     <div>
       <%= flash[:error]%>
     </div>
   <% end %>
-    <%= label_tag :email,nil %>
-    <%= email_field_tag :email,nil, :placeholder => 'Email address'%>
-    <%= label_tag :password %>
-    <%= password_field_tag :password, nil, :placeholder => 'Password' %>
+    <div class="loginWrapper"><%= label_tag :email,nil %>
+    <%= email_field_tag :email,nil, :class =>'emailLabel',:placeholder => 'Email address'%></div>
+    <div class="loginWrapper"><%= label_tag :password,nil %>
+    <%= password_field_tag :password, nil,:class =>'passwordLabel' ,:placeholder => 'Password' %></div>
 
-  <%= submit_tag "Log In", :class => 'btn btn-lg btn-primary btn-block'%>
-  <p>© 2019</p >
+  <%= submit_tag "Log In", :class =>' loginbtn btn btn-lg btn-primary btn-block'%>
+  <!-- <p>Jing © 2019</p > -->
 <% end %>
