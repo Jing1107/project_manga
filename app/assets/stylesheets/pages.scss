@@ -12,6 +12,10 @@ $mainFont: 'Fjalla One', sans-serif;
   margin: 0;
 }
 
+.session {
+  background-color: rgba(#d6f4ee, 0.43);
+}
+
 body {
   background-color: lightpink;
   background-image: url("manga-1.jpg");
@@ -109,55 +113,3 @@ footer {
   background-color:black;
   border-radius: 10px;
 }
-
-
-
-/////////
-////////////////LOGIN PAGE///////////////
-// .login-page {
-//   width: 450px;
-//   background-color: rgba(107, 178, 152, 0.6);
-//   text-align: center;
-//   display: block;
-//   padding: 3em;
-//   margin: 0 auto;
-//   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
-//   border-radius: 5px;
-//   margin-top: 20vh;
-//   border: 2px solid white;
-//   animation: loginMoveIn 1s ease-in;
-//
-//   h1 {
-//     padding-bottom: 0.8em;
-//     text-align: center;
-//   }
-//   .inner-form {
-//     max-width: 40%;
-//     text-align: center;
-//   }
-//
-//   .inner-signup {
-//     text-align: center;
-//   }
-//
-//   .input-field {
-//     border: 2px solid grey;
-//     border-radius: 3px;
-//     max-width: 110%;
-//   }
-//
-//   .email-field {
-//     @extend .input-field;
-//     margin-left: 29px;
-//     }
-//
-//   .submit-btn {
-//     padding: 0.2em 1em;
-//     border-radius: 3px;
-//   }
-//
-//   .record-icon {
-//     max-width: 6vw;
-//   }
-//
-// } //end of loginpage

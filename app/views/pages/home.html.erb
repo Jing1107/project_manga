@@ -1,3 +1,4 @@
+<div class="<%= controller_name %>">
 <% if @current_user.present? %>
 
   <h2>My Manga:</h2>
@@ -6,7 +7,7 @@
       <%= image_tag(animation.image, :class =>'animation_thumbnail') %>
       <%= link_to (animation.name), animation_path(animation)%>
       <%= button_to "Unlike", unlike_animation_path(animation.id), :method => :get %>
-      <br />
+      <br/>
     <% end %>
   </div>
   <%= button_to "Browse Manga", { :action => "index", :controller => 'animations' }, :method => :get %>
@@ -27,3 +28,4 @@
 
 
 <% end %>
+</div>
