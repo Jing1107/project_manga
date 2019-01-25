@@ -5,7 +5,6 @@
 @import url('https://fonts.googleapis.com/css?family=Fjalla+One');
 @import url('https://fonts.googleapis.com/css?family=Bad+Script|Fredericka+the+Great');
 
-$highfont: #6BB298;
 $mainFont: 'Fjalla One', sans-serif;
 
 * {
@@ -38,7 +37,7 @@ nav {
   }
 
   a:hover {
-    color: $highfont;
+    color: #6BB298;
     transition: 2s;
   }
 } //end of nav
