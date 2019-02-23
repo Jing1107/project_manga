@@ -2,14 +2,18 @@
 <% if @current_user.present? %>
 
   <h2>All Animations:</h2>
-  <div>
-    <% @animations.each do |animation| %>
-    <%= image_tag(animation.image,:alt => animation.name, :class => 'animation_thumbnail') %>
-      <%= link_to (animation.name), animation_path(animation), :class => 'animation_name'%>
-      <%= button_to "Add to My Animation", add_animation_path(animation.id), :class => 'animation_thumbnail', :method => 'get' %>
-      <br />
-    <% end %>
-  </div>
+
+
+      <% @animations.each do |animation| %>
+        <div class="index-animation-grid">
+      <%= image_tag(animation.image,:alt => animation.name, :class => 'animation_thumbnail') %>
+        <%= link_to (animation.name), animation_path(animation), :class => 'animation_name'%>
+        <%= button_to "Add to My Animation", add_animation_path(animation.id), :class => 'animation_thumbnail', :method => 'get' %>
+        <br />
+        </div>
+      <% end %>
+
+
   <%= button_to "Back", root_path, :method => :get %>
 
 <% else %>

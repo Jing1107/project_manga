@@ -2,19 +2,24 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.index-animation-grid {
+  display:inline-block;
+  width: 24vw;
+}
+
 .animation_thumbnail {
   margin-bottom: 1em;
   margin-right: 2em;
-  max-width: 20vw;
-  max-height: 30vh;
+  max-width: 15vw;
+  max-height: 16vh;
+  display: inline-table;
 }
 
 .animation_name {
-  font-size: 30px;
+  font-size: 20px;
   font-weight: bold;
-  max-width: 20vw;
-  max-height: 30vh;
   color: rgba(41, 10, 71, 0.82);
+  display: block;
 }
 
 .animations {
