@@ -2,9 +2,26 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+@media screen and (max-width: 800px) {
+  .index-animation-grid {
+    flex: 50%;
+    max-width: 50%;
+    max-height: 50%
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .index-animation-grid {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
 .index-animation-grid {
   display:inline-block;
-  width: 24vw;
+  width: 19vw;
+  height: 10vw;
 }
 
 .animation_thumbnail {
